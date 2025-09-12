@@ -1,0 +1,2 @@
+# gutierrez_practica0
+GUTIERREZ COPA JHON BRANDON PRIMER COMMIT.

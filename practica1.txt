@@ -1,0 +1,63 @@
+DATOS
+NOMBRE : JHON BRANDON GUTIERREZ COPA
+CI: 10466165
+RU: 114113
+MATERIA TECNOLOGIA EMERGENTES
+
+Parte Teórica (20 puntos, ~30 min)
+Sección A: Desarrollo Web (10 puntos)
+(1 pts) ¿Qué diferencia existe entre HTML, CSS y JavaScript en una página web?
+HTML es la estructura de la página lo que hay, CSS es el estilo cómo se ve y JavaScript es la interacción qué hace.
+
+(1 pts) Menciona todas las etiquetas HTML que conoce y de una descripción de al menos 3 de ellas
+<html>, <head>, <title>, <meta>, <link>, <style>, <script>, <body>, <header>, <nav>, <main>, <section>, <article>, <aside>, <footer>, <h1>…<h6>, <p>, <br>, <hr>, <a>, <img>, <ul>, <ol>, <li>, <div>, <span>, <table>, <tr>, <td>, <th>, <form>, <input> etc.
+
+<a> → crea enlaces a otras páginas o secciones.
+
+<img> → inserta imágenes en la web.
+
+<form> → crea formularios para capturar datos del usuario.
+
+(2 pts) ¿Qué es un "atributo" en HTML? Da un ejemplo.
+
+Un atributo en HTML es una propiedad extra que se agrega a una etiqueta para definir su comportamiento o apariencia
+
+<a href="https://platzi.com">Ir a Platzi</a>
+
+
+(2 pts) ¿Qué diferencia hay entre id y class en etiquetas HTML y como se usan en CSS?
+
+id identifica un solo elemento único, class agrupa varios elementos.
+En CSS: #id {} para id y .class {} para class
+
+
+(2 pts) ¿Qué es un archivo externo .css y por qué es recomendable usarlo?
+
+Un archivo externo .css es un documento separado donde se guardan los estilos de la página.
+
+Sección B: Java (10 puntos)
+
+(1 pts) ¿Qué significa que Java es un lenguaje "orientado a objetos"?
+Java organiza el codigo en clases y objetos con atributos y metodos.
+
+(1 pts) Explica qué es la JVM (Java Virtual Machine).
+Es la maquina virtual q ejecuta el bytecode en cualkier sistema.
+
+(2 pts) Nombra los cuatro modificadores de acceso en Java y su alcance.
+public (todos), protected (mismo paquete y subclases), default (mismo paquete), private (solo clase).
+
+(1 pts) ¿Qué es una variable y cómo se declara en Java?
+Es un espacio pa datos, ej: int edad = 20;.
+
+(1 pts) ¿Cuál es la diferencia entre == y .equals() en Java?
+== compara referencias, .equals() compara contenido.
+
+(2 pts) ¿Qué es una interfaz funcional en Java? Da un ejemplo conocido.
+Es una interfaz con un solo metodo abstracto, ej: Runnable.
+
+(2 pts) ¿Para qué sirven las expresiones lambda en Java?
+Sirven pa funciones cortas y limpias sin clases anonimas.
+
+(2 pts) ¿Qué ventaja ofrecen los genéricos en Java al momento de programar?
+Dan reuso de codigo y seguridad de tipos, ej: List<String>.
+

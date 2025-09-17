@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  color: #2e8b57;
+  color: #FF81D0;
   text-align: center;
 }
 
@@ -52,11 +52,11 @@ input, select, button {
 }
 
 button {
-  background-color: #2e8b57;
+  background-color: #FF81D0;
   color: white;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #256d47;
+  background-color: #FF81D0;
 }

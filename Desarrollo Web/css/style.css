@@ -1,62 +1,50 @@
-body {
-  background-color: #f0f8ff;
-  font-family: Arial, sans-serif;
-}
+:root { --bg:#f3f9ff; --header:#eaf2ff; --blue:#1e90ff; --green:#2e8b57; }
+* { box-sizing: border-box; }
+body { background: var(--bg); font-family: system-ui, Arial, sans-serif; margin: 0; }
+.container { max-width: 900px; margin: 0 auto; padding: 0 16px; }
+header { background: var(--header); padding: 16px 0; text-align: center; }
+header h1 { margin: 0; }
+section p { line-height: 1.5; }
+.metas { list-style-type: circle; padding-left: 20px; }
+#perfil { width: 220px; height: auto; border-radius: 10px; display: block; margin: 20px auto; }
+.form { max-width: 700px; }
 
-h1 {
-  color: #FF81D0;
-  text-align: center;
-}
-
-ul {
-  list-style-type: square;
-}
-
-table {
-  border-collapse: collapse;
-  width: 50%;
-  margin: 20px auto;
-}
-
-table, th, td {
-  border: 1px solid black;
-  text-align: center;
-  padding: 8px;
-}
-
-a {
-  color: #0000ee;
-  text-decoration: none;
-}
-
-form {
-  width: 50%;
-  margin: 20px auto;
-  padding: 15px;
-  border: 1px solid #ccc;
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #fff;
-}
-
-label {
-  font-weight: bold;
-}
-
-input, select, button {
+  padding: 10px;
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  margin-bottom: 12px;
+  background: #fff;
 }
 
-button {
-  background-color: #FF81D0;
-  color: white;
+input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  margin: 0;
+  transform: scale(1.15);     
+  accent-color: var(--blue);  
+}
+
+.terminos {
+  display: inline-flex;       
+  align-items: center;
+  gap: 8px;                   
+  margin: 10px 0 16px;
+}
+
+
+.btn {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
   cursor: pointer;
+  width: 100%;
 }
-
-button:hover {
-  background-color: #FF81D0;
-}
+.btn:hover { background: var(--green); }
+footer { margin-top: 40px; padding: 16px 0; }

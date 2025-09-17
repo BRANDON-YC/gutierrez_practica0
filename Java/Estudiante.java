@@ -1,3 +1,4 @@
+package Java;
 public class Estudiante {
     String nombre;
     int edad;

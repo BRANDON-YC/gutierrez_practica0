@@ -15,13 +15,13 @@ public class Main {
         System.out.println("\n---");
 
         // Ejercicio 2: Libro
-        libro l1 = new libro("Clean Code", "Robert C. Martin", 2008);
-        libro l2 = new libro("Effective Java", "Joshua Bloch", 2018);
+        libro l1 = new libro("github", "Robert C. mamani", 2003);
+        libro l2 = new libro("git", "Joshua quispe", 2008);
         l1.mostrarInfo();
         l2.mostrarInfo();
         System.out.println("---");
 
-        // Ejercicio 3: Alumno + Streams (nota >= 60)
+        // Ejercicio 3: Alumno + Streams nota >= 60
         List<alumno> alumnos = Arrays.asList(
                 new alumno("Ana", 55),
                 new alumno("Luis", 60),

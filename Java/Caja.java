@@ -1,12 +1,6 @@
 package Java;
-public class Caja<T> {
+public class caja<T> {
     private T objeto;
-
-    public void guardar(T objeto) {
-        this.objeto = objeto;
-    }
-
-    public T obtener() {
-        return objeto;
-    }
+    public void guardar(T objeto) { this.objeto = objeto; }
+    public T obtener() { return objeto; }
 }

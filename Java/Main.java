@@ -1,32 +1,46 @@
 package Java;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        Estudiante est1 = new Estudiante("Jhon", 20, "Ingeniería de Sistemas");
-        Estudiante est2 = new Estudiante("Brandon", 22, "Derecho");
+        // Ejercicio 1: pares 0 a tantos
+        System.out.print("Ingresa un número: ");
+        int n = sc.nextInt();
+        for (int i = 0; i <= n; i++) {
+            if (i % 2 == 0) System.out.print(i + (i < n ? " " : ""));
+        }
+        System.out.println("\n---");
 
-        est1.presentarse();
-        est2.presentarse();
+        // Ejercicio 2: Libro
+        libro l1 = new libro("Clean Code", "Robert C. Martin", 2008);
+        libro l2 = new libro("Effective Java", "Joshua Bloch", 2018);
+        l1.mostrarInfo();
+        l2.mostrarInfo();
+        System.out.println("---");
 
-        List<Producto> productos = Arrays.asList(
-            new Producto("Mouse", 25.0),
-            new Producto("Teclado", 55.0),
-            new Producto("Monitor", 150.0),
-            new Producto("USB", 15.0)
+        // Ejercicio 3: Alumno + Streams (nota >= 60)
+        List<alumno> alumnos = Arrays.asList(
+                new alumno("Ana", 55),
+                new alumno("Luis", 60),
+                new alumno("Gabi", 95),
+                new alumno("Sofi", 40)
         );
 
-        System.out.println("Productos con precio mayor a 50:");
-        productos.stream()
-                 .filter(p -> p.precio > 50)
-                 .forEach(System.out::println);
+        List<alumno> aprobados = alumnos.stream()
+                .filter(a -> a.getNota() >= 60)
+                .collect(Collectors.toList());
 
-        Caja<Producto> caja = new Caja<>();
-        Producto p1 = new Producto("Laptop", 1200.0);
+        System.out.println("Aprobados (>=60): " + aprobados);
+        System.out.println("---");
 
-        caja.guardar(p1);
-        System.out.println("\nProducto en la caja:");
-        System.out.println(caja.obtener());
+        //caja - Contenedor
+        caja<alumno> caja = new caja<>();
+        caja.guardar(new alumno("Mario", 78));
+        System.out.println("Desde caja: " + caja.obtener());
+
+        sc.close();
     }
 }
